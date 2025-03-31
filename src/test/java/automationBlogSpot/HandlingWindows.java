@@ -7,7 +7,6 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -25,7 +24,7 @@ public class HandlingWindows {
 		driver.manage().window().maximize();
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void newTab() {
 		// Click the button
 		driver.findElement(By.xpath("//button[normalize-space()='New Tab']")).click();
@@ -47,9 +46,26 @@ public class HandlingWindows {
 		System.out.println("This is Parent Window : " + driver.getTitle());
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void popUpWindow() {
+		driver.findElement(By.xpath("//button[@id='PopUp']")).click();
 
+		Set<String> windows = driver.getWindowHandles();
+
+		List<String> winID = new ArrayList(windows);
+		String currentWindow = winID.get(0);
+		String newWindow = winID.get(1);
+
+		// Switching to Current Window
+		driver.switchTo().window(currentWindow);
+		System.out.println("This is Child Window : " + driver.getTitle());
+
+		// Switching to New Window
+		driver.switchTo().window(newWindow);
+		System.out.println("This is Parent Window : " + driver.getTitle());
+		driver.close();
+
+		driver.switchTo().window(currentWindow);
 	}
 
 	@AfterClass

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-31T13:52:57 IST" name="Default suite" finished-at="2025-03-31T13:56:37 IST" duration-ms="220258">
+  <suite started-at="2025-03-31T14:28:29 IST" name="Default suite" finished-at="2025-03-31T14:29:05 IST" duration-ms="36415">
     <groups>
     </groups>
-    <test started-at="2025-03-31T13:52:57 IST" name="Default test" finished-at="2025-03-31T13:56:37 IST" duration-ms="220258">
+    <test started-at="2025-03-31T14:28:29 IST" name="Default test" finished-at="2025-03-31T14:29:05 IST" duration-ms="36415">
       <class name="automationBlogSpot.HandlingWindows">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.HandlingWindows@5b7a5baa]" started-at="2025-03-31T13:52:57 IST" name="setUp" finished-at="2025-03-31T13:56:05 IST" duration-ms="188128" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.HandlingWindows@62379589]" started-at="2025-03-31T14:28:29 IST" name="setUp" finished-at="2025-03-31T14:28:40 IST" duration-ms="10780" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="newTab()[pri:0, instance:automationBlogSpot.HandlingWindows@5b7a5baa]" started-at="2025-03-31T13:56:05 IST" name="newTab" finished-at="2025-03-31T13:56:37 IST" duration-ms="31615" status="PASS">
+        <test-method signature="newTab()[pri:0, instance:automationBlogSpot.HandlingWindows@62379589]" started-at="2025-03-31T14:28:40 IST" name="newTab" finished-at="2025-03-31T14:28:44 IST" duration-ms="3640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.HandlingWindows@5b7a5baa]" started-at="2025-03-31T13:56:37 IST" name="tearDown" finished-at="2025-03-31T13:56:37 IST" duration-ms="438" status="PASS">
+        <test-method signature="popUpWindow()[pri:0, instance:automationBlogSpot.HandlingWindows@62379589]" started-at="2025-03-31T14:28:44 IST" name="popUpWindow" finished-at="2025-03-31T14:29:05 IST" duration-ms="21429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- popUpWindow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.HandlingWindows@62379589]" started-at="2025-03-31T14:29:05 IST" name="tearDown" finished-at="2025-03-31T14:29:05 IST" duration-ms="494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
