@@ -45,6 +45,8 @@ public class HandlingWindows {
 		driver.switchTo().window(parent);
 		System.out.println("This is Parent Window : " + driver.getTitle());
 	}
+	
+	
 
 	@AfterClass
 	public void tearDown() {
